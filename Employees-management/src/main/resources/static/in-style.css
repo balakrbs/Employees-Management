@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image:linear-gradient(35deg,rgb(101, 101, 101) 5%,rgb(201, 201, 201)20%,rgb(201, 201, 201) 60%,rgb(109, 109, 109)90%);
+    padding: 15px;
+    text-align: center;
+}
+
+.container{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 10px auto 0 auto;
+    background:transparent;
+    width: 90%;
+    height:77vh;
+    padding:30px; 
+    display: grid;
+    border-radius: 15px;
+    border: 2px solid #ffff;
+     
+}
+
+
+/***** Employee adding *****/ 
+
+.addform{
+    color: rgb(21, 21, 21);
+    grid-area: 1 / 1 / 5 / 4;
+    width: 90%;
+    height: 93%;
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 20px;    
+     background-image:linear-gradient(39deg, #c2c2c2 10%, #8b8b8b 30%, #777777 60%, #6f6f6f 10%, #dfdfdf 90%);
+    transition: transform 0.3s;
+}
+.addform:hover{
+    transform: scale(1.03);
+       
+}
+.addform>.heading{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+form{
+    padding-left: 10px;
+    color: #ffff;
+}
+label{
+    font-size: 21px;
+    margin: 10px 40px;
+}
+form>input[type="text"]{
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin: 12px 0 12px 45px;
+    padding: 8px;
+    font-size: 15px;
+    color:rgb(41, 41, 41);
+}
+form>input[type="submit"]{
+    padding:10px 30px;
+    margin-right:35px;
+    margin-top:5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    float:right;
+    font-weight: 600;
+}
+form>input[type="text"],::placeholder{
+ 
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+form>input[type="submit"]:hover{
+    cursor: pointer;
+    outline: 1px solid #ffff;
+    background: rgb(30, 255, 1);
+}
+
+ /***** Adding End *****/
+
+
+/***** Searching employee *****/
+.idsearch{
+    grid-area: 1 / 4 / 3 / 6;
+    width: 95%;
+    height: 95%;
+    text-align: center;
+    border-radius: 20px;
+    background-image:linear-gradient(220deg, #808080 10%, #b5b5b5 30%, #777777 60%, #6f6f6f 40%, #dfdfdf 90%);
+    transition: transform 0.3s;
+}
+.idsearch:hover{
+    transform: scale(1.03);
+}
+   
+.idsearch>.heading{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 5px 0;
+}
+
+.idsearch>form>input[type="text"]{
+    width: 15%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin: 12px 0 12px 0px;
+    padding: 8px;
+    font-size: 15px;
+    color:rgb(41, 41, 41);
+}
+
+.idsearch>form>input[type="text"],::placeholder{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align:center;
+    color:grey;
+    
+}
+.idsearch>form>button{
+        padding:4px 15px;
+        margin-top:25px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+.idsearch>form>button:hover{
+    cursor: pointer;
+    outline: 1px solid #ffff;
+    background: transparent;     
+}
+/***** Searching END*****/
+
+/***** view all employee*****/
+.listall{
+    grid-area: 3 / 4 / 5 / 6;
+    width: 95%;
+    height: 95%;
+    text-align: center;
+    border-radius: 20px;
+    background-image:linear-gradient(320deg, #808080 10%, #b5b5b5 30%, #777777 60%, #6f6f6f 40%, #dfdfdf 90%);
+
+  
+    transition: transform 0.3s;
+}
+.listall:hover{
+    transform: scale(1.03);
+}
+.listall>.heading{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0 5px 0;
+}
+.listall>a>button{
+    width: 25%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 20px 0 0px 0px;
+    padding: 4px 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.listall>a>button:hover{
+    cursor: pointer;
+    outline: 1px solid #ffff;
+    background: transparent;   
+}
+
+/***** view all END*****/

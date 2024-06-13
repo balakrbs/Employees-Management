@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image:linear-gradient(35deg,rgb(101, 101, 101) 5%,rgb(201, 201, 201)20%,rgb(201, 201, 201) 60%,rgb(109, 109, 109)90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height:95vh;
+    text-align: center;
+}
+
+.container{
+    background-color:transparent;
+    width: 50%;
+    height:55vh;
+    padding:20px 10px; 
+    border-radius: 15px;
+    border: 2px solid #ffff;
+    align-items: center;
+}
+
+.container>h2{
+    margin-top: 15px;
+    color: #4d4d4d;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/***** Table *****/  
+
+table{
+    margin:25px auto 0px auto;
+    padding:20px;
+    border-collapse: collapse;
+    border:1.5px solid #ffff;
+    
+}
+tr{
+    border-bottom: 2px solid #ffff;
+}
+tr:nth-child(even){
+    background-color: #797979;
+    padding:10px 40px;
+    border-collapse: collapse;
+    text-align: center;    
+    border-radius:40px;
+    
+}
+
+td{
+    padding:10px 40px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/***** End Table *****/
+a>button{
+    margin:45px 35px 15px 30px;
+    padding:10px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+a>button:hover{
+    cursor: pointer;
+    background: rgb(30, 255, 1);
+    outline: 1px solid #ffffff;
+}

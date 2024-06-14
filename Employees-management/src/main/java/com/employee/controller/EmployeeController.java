@@ -15,35 +15,35 @@ import com.employee.service.EmployeeService;
 public class EmployeeController {
 
     @Autowired
-    private EmployeeService employeeService;
+    private EmployeeService employeeService;			//importing the Service
 
-    @GetMapping("/")
+    @GetMapping("/")											// refreshing the index
     public String index(Model model) {
         model.addAttribute("employee", new Employee());
         return "index";
     }
 
-    @PostMapping("/save")
+    @PostMapping("/save")																//Function for Adding data's to the database
     public String saveEmployee(@ModelAttribute Employee employee, Model model) {
         employeeService.saveEmployee(employee);
         return "success.html";
     }
 
-    @GetMapping("/displayAll")
+    @GetMapping("/displayAll")															// Function Getting the list of employees from the database
     public String displayAllEmployees(Model model) {
         model.addAttribute("employees", employeeService.getAllEmployee());
         return "employeeList";
     }
     
     
-//    @GetMapping("/forward")
+//    @GetMapping("/forward")															//Function for redirect the next page -for testing purpose 
 //    public String forwardpage(Model model) {  
 //    	 	model.addAttribute("employee", new Employee());
 //           return "Searchemployee";
 //       }
     
     
-    @PostMapping("/display")
+    @PostMapping("/display")																				// Function for Getting the employee id to search the employee details
     public String displayEmployeeById(@ModelAttribute(value="employee") Employee employee,Model model) { 
     	//System.out.println(employee.getId());    	
         Optional<Employee> emp = employeeService.getEmployeeById(employee.getId());
@@ -54,9 +54,7 @@ public class EmployeeController {
         } else {
             return "error";
         }
-    }
-    
-    
+    }  
   
 }
 

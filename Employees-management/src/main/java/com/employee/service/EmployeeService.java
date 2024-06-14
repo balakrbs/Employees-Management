@@ -13,25 +13,21 @@ import com.employee.repository.EmployeeRepository;
 public class EmployeeService {
 	
 	@Autowired
-	private EmployeeRepository employeeRepository;
+	private EmployeeRepository employeeRepository;    //importing the repository
 	
-	public Employee saveEmployee(Employee employee) {
+	public Employee saveEmployee(Employee employee) {		//Adding data's to the database
 		return employeeRepository.save(employee);
 		
 	}
 	
-	public List<Employee> getAllEmployee(){
+	public List<Employee> getAllEmployee(){					// Getting the list of employees from the database
 		return employeeRepository.findAll();
 	}
 	
-	public Optional<Employee> getEmployeeById(String id){
+	public Optional<Employee> getEmployeeById(String id){		//Getting the employee id to search the employee details
 		return employeeRepository.findById(id);
 		
 	}
 
-	public Optional<Employee> get(String id) {
-		// TODO Auto-generated method stub
-		return employeeRepository.findById(id);
-	}
 
 }

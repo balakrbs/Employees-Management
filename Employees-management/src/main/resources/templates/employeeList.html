@@ -12,21 +12,25 @@
 </head>
 <body>
  <div class="container">
+ 				
             <h2>Employee List</h2>
+            <!-- Table format to display the list of employees -->
             <table>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Location</th>
-                </tr>            
+                </tr>  
+                <!-- printing the data's in field using object -->          
                 <tr th:each="employee : ${employees}">
-                    <td th:text="${employee.id}">hi</td>
-                    <td th:text="${employee.name}">how</td>
-                    <td th:text="${employee.email}">arete</td>
-                    <td th:text="${employee.location}">fesggdgh</td>
+                    <td th:text="${employee.id}"></td>
+                    <td th:text="${employee.name}"></td>
+                    <td th:text="${employee.email}"></td>
+                    <td th:text="${employee.location}"></td>
                 </tr>
             </table>
+            <!-- Button to redirect to index page --> 
         <a href="/"><button>Add New Employee</button></a>
     </div>
 </body>

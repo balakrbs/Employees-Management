@@ -7,7 +7,7 @@ package com.employee.repository;
 	import com.employee.model.Employee;
 
 	@Repository
-	public interface EmployeeRepository extends MongoRepository<Employee,String> {
+	public interface EmployeeRepository extends MongoRepository<Employee,String> { // mongoDb connection
 
 	}
 

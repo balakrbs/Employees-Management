@@ -16,6 +16,7 @@
         <div class="container">               
         	<div class="addform">
 		        <h3 class="heading">Enter the Employee Details </h3>
+		        <!--linking with thymeleaf to get input from the user  -->
 			    	<form action="#" th:action="@{/save}" th:object="${employee}" method="post">
 				        
 				        <label for="empid">ID :</label><br>
@@ -34,7 +35,7 @@
     				</form>
     			</div>
         	
-                
+                 <!--linking with thymeleaf to id from the user using field tag  -->
                 <div class="idsearch">
                     <h3 class="heading">Enter the Employee Id </h3>
                     <form action="#" th:action="@{/display}" th:object="${employee}" method="post">
@@ -43,7 +44,7 @@
                     </form>
                 </div>
         
-        	
+        		<!--button to retrieve the list of employees in database  -->
                 <div class="listall">
                         <h3 class="heading">Click below to view<br> all Employees</h3>
                         <a href="/displayAll"><button>View all </button></a>     

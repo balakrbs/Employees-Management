@@ -6,13 +6,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="employee")
 public class Employee {
 	@Id
-	private String id;
+	private String id;							//creating the variables  
 	private String name;
 	private String email;
-	private String Location;
+	private String Location;			
 	
 	
-	public String getId() {
+	public String getId() {					// Setting getter and setter
 		return id;
 	}
 	public void setId(String id) {
